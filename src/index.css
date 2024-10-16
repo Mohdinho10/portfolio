@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply overflow-x-hidden font-bodyFont tracking-wider text-primaryColor dark:bg-darkBodyColor dark:text-textColor;
+  }
+
+  section {
+    @apply py-16 md:pb-20 md:pt-28;
+  }
+
+  input,
+  textarea {
+    @apply w-full rounded-lg border border-gray-800 px-4 py-3 dark:bg-darkBodyColor;
+  }
+
+  input:focus,
+  input:active,
+  textarea:focus,
+  textarea:active {
+    @apply border-primaryColorLight outline-none;
+  }
+}
+
+@layer components {
+  .container {
+    @apply mx-auto w-[1226px] max-w-full;
+  }
+
+  .nav-link {
+    @apply relative font-bold;
+  }
+
+  .nav-link::before {
+    @apply absolute -bottom-[5px] left-0 h-[2px] w-full origin-right scale-x-0 bg-gradient-to-r from-primaryColorLight to-primaryColor transition-transform duration-500 ease-in-out content-[""];
+  }
+
+  .nav-link:hover::before {
+    @apply origin-left scale-x-100;
+  }
+
+  .btn {
+    @apply relative flex items-center justify-center overflow-hidden rounded-full bg-gradient-to-r from-primaryColorLight to-primaryColor px-7 py-3 font-bold capitalize text-whiteColor;
+  }
+
+  .btn::before {
+    @apply absolute left-0 top-0 h-[100%] w-[100%] origin-right scale-x-0 rounded-full bg-gradient-to-r from-primaryColor to-primaryColorLight transition-transform duration-300 ease-in-out content-[""];
+  }
+
+  .btn:hover:before {
+    @apply origin-left scale-x-100;
+  }
+
+  .btn_outline {
+    @apply z-30 cursor-pointer rounded-full border border-primaryColorLight px-9 py-4 text-primaryColorLight duration-300 hover:bg-primaryColorLight hover:text-whiteColor;
+  }
+
+  .title,
+  .subtitle {
+    @apply inline-block bg-gradient-to-r from-primaryColorLight to-primaryColor bg-clip-text pb-2 text-4xl font-bold text-transparent dark:to-whiteColor lg:text-6xl xl:text-[65px];
+  }
+
+  .subtitle {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+
+  .sticky__header {
+    @apply sticky left-0 top-0 z-[99999] h-[80px] w-full bg-[#fff] shadow-[3px_3px_-8px_3px_#073764] dark:bg-[#073764] dark:shadow-[3px_3px_-8px_3px_#073764];
+  }
+}
+
+@layer utilities {
+  /* hero */
+  .social-icon {
+    @apply relative grid h-10 w-10 cursor-pointer place-items-center rounded-full border border-primaryColorLight text-primaryColorLight duration-300 hover:text-white;
+  }
+
+  .social-icon::before {
+    @apply absolute inset-0 h-[100%] w-[100%] scale-0 rounded-full bg-primaryColorLight transition-transform duration-300 ease-in-out content-[""];
+  }
+
+  .social-icon:hover:before {
+    @apply origin-center scale-100;
+  }
+
+  /* My skills */
+  .skills__card img {
+    @apply duration-300;
+  }
+
+  .skills__card:hover img {
+    @apply scale-110;
+  }
+}
