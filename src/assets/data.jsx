@@ -95,7 +95,8 @@ export const projects = [
     img: project1,
     description: "A Tourist project",
     technologies: ["react,mongoDB,reactbootstrap,express"],
-    liveSite: "",
+    liveSite: "https://travel-world-wo14.onrender.com",
+    github: "https://github.com/Mohdinho10/Travel-World",
   },
   {
     title: "Medicare",
@@ -103,7 +104,8 @@ export const projects = [
     img: project2,
     description: "A Doctor's appointment project",
     technologies: ["react,mongoDB,tailwind,express"],
-    liveSite: "",
+    liveSite: "https://medicare-bjgc.onrender.com",
+    github: "https://github.com/Mohdinho10/Medicare",
   },
   {
     title: "Dream Place",
@@ -111,7 +113,8 @@ export const projects = [
     img: project3,
     description: "A house market place project",
     technologies: ["react,express,,prisma,SASS"],
-    liveSite: "",
+    liveSite: "https://dream-place-ukbx.onrender.com",
+    github: "https://github.com/Mohdinho10/Dream-Place",
   },
   {
     title: "Dream Nest",
@@ -119,7 +122,8 @@ export const projects = [
     img: project4,
     description: "A online booking project",
     technologies: ["react,mongo,materialUI,express,SASS"],
-    liveSite: "",
+    liveSite: "https://dream-nest-zpmr.onrender.com",
+    github: "https://github.com/Mohdinho10/Dream-Nest",
   },
 ];
 
