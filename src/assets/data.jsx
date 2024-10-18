@@ -16,17 +16,17 @@ const project4 = new URL("./projects/project4.PNG", import.meta.url).href;
 export const services = [
   {
     title: "Branding",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad.",
+    desc: "Crafting a unique identity for your business through thoughtful design and strategic branding. We help you communicate your values and vision effectively to your audience.",
     icon: <FaUserCircle />,
   },
   {
     title: "Hosting Websites",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad.",
+    desc: "Reliable and secure web hosting solutions tailored to your needs. i ensure your website is always accessible, providing a solid foundation for your online presence.",
     icon: <FaGlobe />,
   },
   {
     title: "Web Development",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad.",
+    desc: "Building responsive and user-friendly websites that engage visitors and drive results. My development process focuses on creating seamless experiences that reflect your needs.",
     icon: <MdOutlineDeveloperMode />,
   },
 ];
@@ -93,7 +93,8 @@ export const projects = [
     title: "Travel World",
     id: 1,
     img: project1,
-    description: "A Tourist project",
+    description:
+      "This is a Tourism Booking System that enables tourists to browse and book various tours without the need for online payment integration. The application provides detailed information about each tour, including itineraries, locations, and pricing, making it easy for users to plan their trips.",
     technologies: ["react,mongoDB,reactbootstrap,express"],
     liveSite: "https://travel-world-wo14.onrender.com",
     github: "https://github.com/Mohdinho10/Travel-World",
@@ -102,7 +103,8 @@ export const projects = [
     title: "Medicare",
     id: 2,
     img: project2,
-    description: "A Doctor's appointment project",
+    description:
+      "This is a Doctor Appointment Booking System that allows users to easily schedule appointments with healthcare professionals and securely process payments. The application features a user-friendly interface for both patients and doctors, enhancing the overall healthcare experience.",
     technologies: ["react,mongoDB,tailwind,express"],
     liveSite: "https://medicare-bjgc.onrender.com",
     github: "https://github.com/Mohdinho10/Medicare",
@@ -111,7 +113,8 @@ export const projects = [
     title: "Dream Place",
     id: 3,
     img: project3,
-    description: "A house market place project",
+    description:
+      "This is a platform that allows users to buy and rent various properties, facilitating connections between property owners and potential buyers or renters. The application provides comprehensive listings with detailed descriptions, images, and contact information, enabling users to make informed decisions",
     technologies: ["react,express,,prisma,SASS"],
     liveSite: "https://dream-place-ukbx.onrender.com",
     github: "https://github.com/Mohdinho10/Dream-Place",
@@ -120,7 +123,8 @@ export const projects = [
     title: "Dream Nest",
     id: 4,
     img: project4,
-    description: "A online booking project",
+    description:
+      "This is a Accommodation Booking System that allows users to browse and book various places for their stay. The application provides detailed information about each accommodation option, including amenities, availability, and pricing, enabling users to make informed decisions about their travel plans",
     technologies: ["react,mongo,materialUI,express,SASS"],
     liveSite: "https://dream-nest-zpmr.onrender.com",
     github: "https://github.com/Mohdinho10/Dream-Nest",
