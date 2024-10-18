@@ -48,7 +48,7 @@ function Modal({ activeId, setShowModal }) {
 
         <div className="container p-4">
           <h2 className="my-3 text-xl font-bold">{project.title}</h2>
-          <p className="text-sm leading-5">{project.desc}</p>
+          <p className="text-sm leading-5">{project.description}</p>
 
           <div className="mt-4 flex">
             <a
