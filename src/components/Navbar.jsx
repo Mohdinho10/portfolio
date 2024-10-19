@@ -2,10 +2,12 @@ import { useEffect, useRef, useState } from "react";
 import { BiMenu } from "react-icons/bi";
 import { IoMdClose } from "react-icons/io";
 import { IoMoonOutline, IoSunny } from "react-icons/io5";
+import darkModeLogo from "../assets/darkMode-logo.png";
+import lightModeLogo from "../assets/lightMode-logo.png";
 
-function Navbar() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+function Navbar({ isDarkMode, setIsDarkMode }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  console.log(isDarkMode);
 
   // Check localStorage for the user's theme preference on initial load
   useEffect(() => {
@@ -16,7 +18,7 @@ function Navbar() {
     } else {
       document.documentElement.classList.remove("dark");
     }
-  }, []);
+  }, [setIsDarkMode]);
 
   const toggleTheme = () => {
     setIsDarkMode((prevMode) => {
@@ -70,9 +72,9 @@ function Navbar() {
       className="sticky__header sticky top-0 z-50 duration-300"
       ref={headerRef}
     >
-      <nav className="container relative flex items-center justify-between">
-        <div className="text-6xl" id="logo">
-          M
+      <nav className="container relative flex items-center justify-between sm:pt-4 md:pt-0">
+        <div className="sm:w-[50px] md:w-[60px]" id="logo">
+          <img src={isDarkMode ? darkModeLogo : lightModeLogo} alt="logo" />
         </div>
 
         <div

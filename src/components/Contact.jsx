@@ -1,7 +1,24 @@
 /* eslint-disable react/no-unescaped-entities */
+import { useForm } from "@formspree/react";
 import { contactDetails } from "../assets/data";
+import { toast } from "react-toastify";
+import { useEffect } from "react";
+import ClipLoader from "react-spinners/ClipLoader";
 
 function Contact() {
+  const [state, handleSubmit] = useForm("mvgogpga");
+
+  // Use useEffect to handle toast notifications
+  useEffect(() => {
+    if (state?.succeeded) {
+      toast.success("Thank you for your submission!");
+    }
+
+    if (state?.errors?.length > 0) {
+      toast.error("Something went wrong!");
+    }
+  }, [state?.succeeded, state?.errors]); // Only run when these values change
+
   return (
     <section className="container" id="contact">
       <div className="flex flex-col gap-16 md:flex-row-reverse md:items-center md:gap-10 lg:gap-20">
@@ -23,7 +40,10 @@ function Contact() {
         </div>
 
         {/* Contact Form */}
-        <form className="flex-1 space-y-3 rounded-3xl border border-primaryColor bg-sectionColor px-5 py-10 dark:bg-darkSectionColor md:px-10 md:py-14 lg:px-14 lg:py-20">
+        <form
+          onSubmit={handleSubmit}
+          className="flex-1 space-y-3 rounded-3xl border border-primaryColor bg-sectionColor px-5 py-10 dark:bg-darkSectionColor md:px-10 md:py-14 lg:px-14 lg:py-20"
+        >
           {/* Subtitle & description */}
           <div className="flex flex-col">
             <h2 className="subtitle">Let's work together!</h2>
@@ -43,6 +63,7 @@ function Contact() {
                 placeholder="First Name"
                 name="firstName"
                 autoComplete="off"
+                required
                 className="w-full md:w-1/2"
               />
               <input
@@ -50,6 +71,7 @@ function Contact() {
                 placeholder="Last Name"
                 name="lastName"
                 autoComplete="off"
+                required
                 className="w-full md:w-1/2"
               />
             </div>
@@ -60,28 +82,49 @@ function Contact() {
                 placeholder="Email Address"
                 name="email"
                 autoComplete="off"
+                required
                 className="w-full md:w-1/2"
               />
               <input
-                type="phone"
+                type="tel" // Changed to "tel" for phone number input
                 placeholder="Phone Number"
                 name="phone"
                 autoComplete="off"
+                required
                 className="w-full md:w-1/2"
               />
             </div>
           </div>
+
           <div>
             <textarea
               name="message"
               rows="5"
               placeholder="Message"
-              className="resize-none"
+              required // Added required attribute for validation
+              className="w-full resize-none" // Added width for textarea
             />
-            <button className="btn">
-              <span className="z-10">Send Message</span>
+            <button
+              type="submit"
+              disabled={state?.submitting} // Disable button while submitting
+              className="btn" // Optional success styling
+            >
+              <span className="z-10">
+                {state?.submitting ? (
+                  <ClipLoader color="white" size={20} />
+                ) : (
+                  "Submit"
+                )}
+              </span>
             </button>
           </div>
+
+          {/* {state?.errors?.length > 0 && (
+              <p className="text-red-500">Something went wrong!</p> // Error message display
+            )}
+            {state.succeeded && (
+              <p className="text-green-500">Thank you for your submission!</p> // Success message display
+            )} */}
         </form>
       </div>
     </section>
