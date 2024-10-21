@@ -72,8 +72,8 @@ function Navbar({ isDarkMode, setIsDarkMode }) {
       className="sticky__header sticky top-0 z-50 duration-300"
       ref={headerRef}
     >
-      <nav className="container relative flex items-center justify-between sm:pt-4 md:pt-0">
-        <div className="sm:w-[50px] md:w-[60px]" id="logo">
+      <nav className="container relative flex items-center justify-between pt-4 md:pt-0">
+        <div className="w-[50px] md:w-[60px]" id="logo">
           <img src={isDarkMode ? darkModeLogo : lightModeLogo} alt="logo" />
         </div>
 

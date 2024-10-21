@@ -10,7 +10,7 @@ function Footer({ isDarkMode }) {
         className="bg-sectionColor py-10 dark:bg-darkSectionColor"
       >
         <div className="container flex flex-col items-center gap-5">
-          <div className="sm:w-[55px] md:w-[70px]" id="logo">
+          <div className="w-[55px] md:w-[70px]" id="logo">
             <img src={isDarkMode ? darkModeLogo : lightModeLogo} alt="logo" />
           </div>
           <div>
