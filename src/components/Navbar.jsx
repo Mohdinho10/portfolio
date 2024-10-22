@@ -81,7 +81,7 @@ function Navbar({ isDarkMode, setIsDarkMode }) {
           id="nav-menu"
           className={`absolute left-0 top-0 w-full bg-primaryColor py-24 sm:z-20 lg:static lg:ml-auto lg:block lg:w-auto lg:border-none lg:bg-transparent lg:py-0 ${isMenuOpen ? "" : "hidden"} `}
         >
-          <ul className="flex flex-col items-center gap-8 text-center sm:text-textColor lg:m-4 lg:flex-row lg:text-primaryColor dark:lg:text-textColor">
+          <ul className="flex flex-col items-center gap-8 text-center text-textColor lg:m-4 lg:flex-row lg:text-primaryColor dark:lg:text-textColor">
             <li>
               <a href="#services" className="nav-link">
                 Services
