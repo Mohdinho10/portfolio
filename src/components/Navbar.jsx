@@ -65,6 +65,10 @@ function Navbar({ isDarkMode, setIsDarkMode }) {
   }, []);
 
   // const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  // WhatsApp link
+  const whatsappNumber = "+255693275058"; // Replace with your actual number
+  const whatsappMessage = "Hello! I'm interested in your services."; // Customize your message
+  const whatsappLink = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
     <header
@@ -103,9 +107,11 @@ function Navbar({ isDarkMode, setIsDarkMode }) {
               </a>
             </li>
             <li>
-              <button className="btn">
-                <span className="z-10">Hire Me</span>
-              </button>
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+                <button className="btn">
+                  <span className="z-10">Hire Me</span>
+                </button>
+              </a>
             </li>
           </ul>
 
