@@ -40,7 +40,7 @@ function Projects() {
                 className="h-[200px] w-[100%] rounded-[8px]"
               />
             </figure>
-            <div className="absolute left-0 top-0 z-[5] hidden h-full w-full bg-white bg-opacity-60 group-hover:block dark:bg-darkSectionColor dark:bg-opacity-60">
+            <div className="absolute left-0 top-0 z-[5] h-full w-full bg-white bg-opacity-60 group-hover:block dark:bg-darkSectionColor dark:bg-opacity-60 md:hidden">
               <div className="flex h-full w-full items-center justify-center">
                 <button
                   onClick={() => showModalHandler(project.id)}
