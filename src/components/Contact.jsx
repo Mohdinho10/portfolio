@@ -29,7 +29,7 @@ function Contact() {
               <div className="grid h-10 w-10 place-items-center rounded-full bg-gradient-to-b from-primaryColor to-primaryColorLight text-whiteColor lg:h-14 lg:w-14">
                 {contactDetail.icon}
               </div>
-              <div className="space-y-1">
+              <div className="space-y-4">
                 <p className="text-sm">{contactDetail.email}</p>
                 <p className="cursor-pointer font-bold duration-300 hover:text-primaryColorLight">
                   {contactDetail.detail}
