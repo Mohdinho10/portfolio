@@ -1,6 +1,6 @@
 import { FaDownload, FaLinkedin } from "react-icons/fa";
 import { IoLogoGithub, IoLogoInstagram } from "react-icons/io";
-import img from "/images/mohd.png";
+import img from "/images/portfolio1.png";
 import resume from "../assets/My-resume.pdf";
 
 function Home() {
