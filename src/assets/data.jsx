@@ -97,7 +97,7 @@ export const projects = [
       "This is a Tourism Booking System that enables tourists to browse and book various tours without the need for online payment integration. The application provides detailed information about each tour, including itineraries, locations, and pricing, making it easy for users to plan their trips.",
     technologies: ["react,mongoDB,reactbootstrap,express"],
     liveSite: "https://travel-world-wo14.onrender.com",
-    github: "https://github.com/Mohdinho10/Travel-World",
+    // github: "https://github.com/Mohdinho10/Travel-World",
   },
   {
     title: "Medicare",
@@ -107,7 +107,7 @@ export const projects = [
       "This is a Doctor Appointment Booking System that allows users to easily schedule appointments with healthcare professionals and securely process payments. The application features a user-friendly interface for both patients and doctors, enhancing the overall healthcare experience.",
     technologies: ["react,mongoDB,tailwind,express"],
     liveSite: "https://medicare-bjgc.onrender.com",
-    github: "https://github.com/Mohdinho10/Medicare",
+    // github: "https://github.com/Mohdinho10/Medicare",
   },
   {
     title: "Dream Place",
@@ -117,7 +117,7 @@ export const projects = [
       "This is a platform that allows users to buy and rent various properties, facilitating connections between property owners and potential buyers or renters. The application provides comprehensive listings with detailed descriptions, images, and contact information, enabling users to make informed decisions",
     technologies: ["react,express,,prisma,SASS"],
     liveSite: "https://dream-place-ukbx.onrender.com",
-    github: "https://github.com/Mohdinho10/Dream-Place",
+    // github: "https://github.com/Mohdinho10/Dream-Place",
   },
   {
     title: "Dream Nest",
@@ -127,38 +127,6 @@ export const projects = [
       "This is a Accommodation Booking System that allows users to browse and book various places for their stay. The application provides detailed information about each accommodation option, including amenities, availability, and pricing, enabling users to make informed decisions about their travel plans",
     technologies: ["react,mongo,materialUI,express,SASS"],
     liveSite: "https://dream-nest-zpmr.onrender.com",
-    github: "https://github.com/Mohdinho10/Dream-Nest",
+    // github: "https://github.com/Mohdinho10/Dream-Nest",
   },
 ];
-
-// export const projects = [
-//   {
-//     title: "Project One",
-//     description: "This is a brief description of Project One.",
-//     img: project1,
-//     github: "https://github.com/yourusername/project-one",
-//     liveSite: "https://yourusername.github.io/project-one/",
-//   },
-//   {
-//     title: "Project Two",
-//     description: "This is a brief description of Project Two.",
-//     img: project2,
-//     github: "https://github.com/yourusername/project-two",
-//     liveSite: "https://yourusername.github.io/project-two/",
-//   },
-//   {
-//     title: "Project Two",
-//     description: "This is a brief description of Project Two.",
-//     img: project3,
-//     github: "https://github.com/yourusername/project-two",
-//     liveSite: "https://yourusername.github.io/project-two/",
-//   },
-//   {
-//     title: "Project Two",
-//     description: "This is a brief description of Project Two.",
-//     img: project4,
-//     github: "https://github.com/yourusername/project-two",
-//     liveSite: "https://yourusername.github.io/project-two/",
-//   },
-//   // Add more projects as needed
-// ];
