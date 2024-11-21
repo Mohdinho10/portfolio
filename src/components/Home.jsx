@@ -39,7 +39,7 @@ function Home() {
               bring your vision to life and contribute to your digital success.
             </p>
             <div className="flex flex-wrap items-center gap-5">
-              <a>
+              <a href={resume} download>
                 <button className="btn_outline flex items-center">
                   Download CV <FaDownload className="ml-3 h-5 w-5" />
                 </button>
@@ -47,7 +47,7 @@ function Home() {
               <div className="flex items-center gap-5">
                 <div>
                   <a
-                    // href="https://www.linkedin.com/in/muhammad-abubakar2003"
+                    href="https://www.linkedin.com/in/muhammad-abubakar2003"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="social-icon"
@@ -57,7 +57,7 @@ function Home() {
                 </div>
                 <div>
                   <a
-                    // href="https://github.com/Mohdinho10"
+                    href="https://github.com/Mohdinho10"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="social-icon"
